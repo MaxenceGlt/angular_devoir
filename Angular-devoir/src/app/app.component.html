@@ -1,0 +1,7 @@
+<input type="text" class="form-control" [(ngModel)]="varName">
+<span>{{varName}} </span>
+<button (click)="removeText()"> Remove Text</button>
+
+<app-list-component [currentBoolean]="currentBoolean" ></app-list-component>
+
+<Button (click)="currentBoolean = !currentBoolean"> {{currentBoolean ? 'Cacher' : 'Afficher'}} </Button>
